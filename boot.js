@@ -2,9 +2,9 @@
 
 var moduleName = 'boot';
 
-var bus    = require ('xcraft-core-bus');
-var busClient  = require ('xcraft-core-busclient');
-var zogLog     = require ('xcraft-core-log') (moduleName);
+var bus          = require ('xcraft-core-bus');
+var busClient    = require ('xcraft-core-busclient');
+var zogLog       = require ('xcraft-core-log') (moduleName);
 var xcraftConfig = require ('xcraft-core-etc').load ('xcraft');
 
 var bootEnv = function () {

@@ -1,6 +1,6 @@
 'use strict';
 
-var moduleName = 'zog-boot';
+var moduleName = 'boot';
 
 var bus    = require ('xcraft-core-bus');
 var busClient  = require ('xcraft-core-busclient');

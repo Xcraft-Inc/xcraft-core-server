@@ -9,8 +9,6 @@ var xcraftConfig = require ('xcraft-core-etc').load ('xcraft');
 
 var bootEnv = function () {
   var path = require ('path');
-  var fs   = require ('fs');
-
   var zogPlatform = require ('xcraft-core-platform');
 
   var list = process.env.PATH.split (path.delimiter);
@@ -31,18 +29,10 @@ var bootEnv = function () {
     }
   }
 
-  var zogrc = {};
-  try {
-    zogrc = JSON.parse (fs.readFileSync (xcraftConfig.zogRc, 'utf8'));
-    if (zogrc.hasOwnProperty ('path')) {
-      zogrc.path.reverse ().forEach (function (location) {
-        list.unshift (location);
-      });
-    }
-  } catch (err) {
-    if (err.code !== 'ENOENT') {
-      throw err;
-    }
+  if (xcraftConfig.hasOwnProperty ('path')) {
+    xcraftConfig.path.reverse ().forEach (function (location) {
+      list.unshift (location);
+    });
   }
 
   list.unshift (path.resolve ('./usr/bin'));

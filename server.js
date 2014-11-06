@@ -2,8 +2,8 @@
 'use strict';
 
 var boot   = require ('./boot.js');
-var zogLog = require ('xcraft-core-log') ('bus-server');
-zogLog.verbosity (process.env.XCRAFT_LOG ? parseInt (process.env.XCRAFT_LOG) : 2);
+var xLog = require ('xcraft-core-log') ('bus-server');
+xLog.verbosity (process.env.XCRAFT_LOG ? parseInt (process.env.XCRAFT_LOG) : 2);
 
 
 var server = function () {
@@ -11,7 +11,7 @@ var server = function () {
 
   commander.registerShutdownHandler (function () {
     boot.busClient.events.send ('disconnected');
-    zogLog.verb ('shutdown...');
+    xLog.verb ('shutdown...');
     boot.stop ();
   });
 

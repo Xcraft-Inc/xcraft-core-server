@@ -4,7 +4,7 @@ var moduleName = 'boot';
 
 var bus          = require ('xcraft-core-bus');
 var busClient    = require ('xcraft-core-busclient');
-var zogLog       = require ('xcraft-core-log') (moduleName);
+var xLog         = require ('xcraft-core-log') (moduleName);
 var xcraftConfig = require ('xcraft-core-etc').load ('xcraft');
 
 var bootEnv = function () {
@@ -40,11 +40,11 @@ var bootEnv = function () {
   list.unshift (path.join (xcraftConfig.pkgTargetRoot, 'bin'));
 
   process.env.PATH = list.join (path.delimiter);
-  zogLog.verb ('zog env ready');
+  xLog.verb ('zog env ready');
 };
 
 bus.getEmitter.on ('stop', function () {
-  zogLog.verb ('Bus stop event received');
+  xLog.verb ('Bus stop event received');
 });
 
 exports.start = function (callbackDone) {

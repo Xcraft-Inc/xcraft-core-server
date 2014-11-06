@@ -9,15 +9,15 @@ var xcraftConfig = require ('xcraft-core-etc').load ('xcraft');
 
 var bootEnv = function () {
   var path = require ('path');
-  var zogPlatform = require ('xcraft-core-platform');
 
   var list = process.env.PATH.split (path.delimiter);
 
   /* With Windows, we must find cmd.exe or the exec() function fails.
    * It should not be necessary on Unix because it is always related to
    * /bin/sh which is absolute.
+   * This section drops all unrelated path too.
    */
-  if (zogPlatform.getOs () === 'win') {
+  if (process.env.COMSPEC !== undefined) {
     var systemDir = path.dirname (process.env.COMSPEC).replace (/\\/g, '\\\\');
 
     if (systemDir.length) {

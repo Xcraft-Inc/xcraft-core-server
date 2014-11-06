@@ -3,7 +3,7 @@
 
 var boot   = require ('./boot.js');
 var zogLog = require ('xcraft-core-log') ('bus-server');
-zogLog.verbosity (0);
+zogLog.verbosity (process.env.XCRAFT_LOG ? parseInt (process.env.XCRAFT_LOG) : 2);
 
 
 var server = function () {

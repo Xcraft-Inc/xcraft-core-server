@@ -56,11 +56,6 @@ exports.start = function (callbackDone) {
   });
 
   var commandHandlers = [];
-  commandHandlers.push ({
-    path: xcraftConfig.scriptsRoot,
-    pattern: /zog.+\.js$/
-  });
-
   var xFs = require ('xcraft-core-fs');
   xFs.ls (xcraftConfig.nodeModules, /^xcraft-(core|contrib).*/).forEach (function (item) {
     commandHandlers.push ({

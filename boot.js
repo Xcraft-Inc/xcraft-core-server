@@ -40,7 +40,7 @@ var bootEnv = function () {
   list.unshift (path.join (xcraftConfig.pkgTargetRoot, 'bin'));
 
   process.env.PATH = list.join (path.delimiter);
-  xLog.verb ('zog env ready');
+  xLog.verb ('Xcraft environment ready');
 };
 
 bus.getEmitter.on ('stop', function () {

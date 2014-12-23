@@ -12,7 +12,8 @@
     "xcraft-core-fs": "0.1.0",
     "xcraft-core-bus": "0.1.0",
     "xcraft-core-busclient": "0.1.0",
-    "xcraft-core-process": "0.1.0"
+    "xcraft-core-process": "0.1.0",
+    "xcraft-core-eventstore": "0.1.0"
   },
   "author": "Samuel Loup & Mathieu Schroeter",
   "license": "MIT"

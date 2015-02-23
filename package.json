@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "xcraft-core-platform": "0.1.0",
+    "xcraft-core-daemon": "0.1.0",
     "xcraft-core-etc": "0.1.0",
     "xcraft-core-log": "0.1.0",
     "xcraft-core-fs": "0.1.0",

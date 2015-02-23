@@ -1,9 +1,8 @@
 'use strict';
 
-exports.fork = function (callback, callbackStdout, callbackStderr) {
-  var path     = require ('path');
-  var xProcess = require ('xcraft-core-process');
+var moduleName = 'xcraft';
 
-  xProcess.fork (path.join (__dirname, './lib/server.js'),
-                 [], {silent: true}, callback, callbackStdout, callbackStderr);
-};
+var path   = require ('path');
+var daemon = require ('xcraft-core-daemon') (moduleName, path.join (__dirname, 'lib/server.js'), true);
+
+module.exports = daemon;

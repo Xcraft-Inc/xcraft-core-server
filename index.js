@@ -1,6 +1,6 @@
 'use strict';
 
-var moduleName = 'xcraft';
+var moduleName = 'server';
 
 var path   = require ('path');
 var daemon = require ('xcraft-core-daemon');

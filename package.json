@@ -13,12 +13,12 @@
   "dependencies": {
     "xcraft-core-platform": "0.1.0",
     "xcraft-core-daemon": "0.1.0",
+    "xcraft-core-env": "0.1.0",
     "xcraft-core-etc": "0.1.0",
     "xcraft-core-log": "0.1.0",
     "xcraft-core-fs": "0.1.0",
     "xcraft-core-bus": "0.1.0",
     "xcraft-core-busclient": "0.1.0",
-    "xcraft-core-path": "0.1.0",
     "xcraft-core-process": "0.1.0",
     "xcraft-core-eventstore": "0.1.0"
   },

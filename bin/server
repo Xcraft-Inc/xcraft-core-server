@@ -86,3 +86,7 @@ var server = function (err) {
 };
 
 boot.start (server);
+
+process.on ('SIGINT', () => {
+  boot.busClient.command.send ('shutdown');
+});

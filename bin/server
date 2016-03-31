@@ -3,7 +3,7 @@
 
 var moduleName = 'server';
 
-var boot           = require ('./boot.js');
+var boot           = require ('../lib/boot.js');
 var xLog           = require ('xcraft-core-log') (moduleName, true);
 var eventStore     = require ('xcraft-core-eventstore');
 
@@ -13,7 +13,7 @@ xLog.setVerbosity (process.env.XCRAFT_LOG ? parseInt (process.env.XCRAFT_LOG) : 
 var generateMotd = function (orcName) {
   var busConfig = require ('xcraft-core-etc') ().load ('xcraft-core-bus');
 
-  var motd = require ('./motd.js');
+  var motd = require ('../lib/motd.js');
 
   return {
     server:       busConfig.host,

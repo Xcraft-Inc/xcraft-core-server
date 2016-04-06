@@ -4,7 +4,7 @@
 var moduleName = 'server';
 
 var boot           = require ('../lib/boot.js');
-var xLog           = require ('xcraft-core-log') (moduleName, true);
+var xLog           = require ('xcraft-core-log') (moduleName, null);
 var eventStore     = require ('xcraft-core-eventstore');
 
 xLog.setVerbosity (process.env.XCRAFT_LOG ? parseInt (process.env.XCRAFT_LOG) : 0);
@@ -54,14 +54,13 @@ var startBusServices = function (err) {
     boot.busClient.events.send (autoConnectToken + '::autoconnect.finished', connectedMsg);
   });
 
-  commander.registerDisconnectHandler (function () {
-    boot.busClient.events.send ('disconnect.finished');
+  commander.registerDisconnectHandler (function (msg) {
+    boot.busClient.events.send (`${msg.orcName}::disconnect.finished`);
   });
 
-  commander.registerMotdHandler (function () {
-    var orcName = boot.busClient.getStateWhich ();
-    boot.busClient.events.send ('motd', generateMotd (orcName));
-    boot.busClient.events.send ('motd.finished');
+  commander.registerMotdHandler (function (msg) {
+    boot.busClient.events.send (`${msg.orcName}::motd`, generateMotd (msg.orcName));
+    boot.busClient.events.send (`${msg.orcName}::motd.finished`);
   });
 
   heartbeatPulsor = setInterval (function () {

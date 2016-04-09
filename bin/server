@@ -42,7 +42,7 @@ var startBusServices = function (err) {
   });
 
   commander.registerAutoconnectHandler (function (msg) {
-    var registry  = commander.getCommandsRegistry ();
+    var registry  = commander.getRegistry ();
     var orcName   = boot.bus.generateOrcName ();
     var connectedMsg = {
       token:       boot.busClient.getToken (),

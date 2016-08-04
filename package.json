@@ -6,12 +6,15 @@
     "xcraft-server": "./bin/server"
   },
   "main": "index.js",
+  "engines": {
+    "node": ">=6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "file",
-    "url": "lib/xcraft-core-server"
+    "type": "git",
+    "url": "git+https://github.com/Xcraft-Inc/xcraft-core-server.git"
   },
   "dependencies": {
     "xcraft-core-platform": "0.1.0",
@@ -26,5 +29,9 @@
     "xcraft-core-eventstore": "0.1.0"
   },
   "author": "Samuel Loup & Mathieu Schroeter",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xcraft-Inc/xcraft-core-server/issues"
+  },
+  "homepage": "https://github.com/Xcraft-Inc/xcraft-core-server#readme"
 }

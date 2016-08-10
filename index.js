@@ -1,11 +1,11 @@
 'use strict';
 
-var moduleName = 'server';
-
-var path   = require ('path');
-var daemon = require ('xcraft-core-daemon');
+const moduleName = 'server';
 
 exports.runAsDaemon = (options) => {
+  const path   = require ('path');
+  const daemon = require ('xcraft-core-daemon');
+
   return daemon (
     moduleName,
     path.join (__dirname, 'bin/server'),
@@ -16,5 +16,7 @@ exports.runAsDaemon = (options) => {
 };
 
 exports.runAsLib = () => {
-  return {start: require ('./lib/server.js')};
+  return {
+    start: require ('./lib/server.js')
+  };
 };

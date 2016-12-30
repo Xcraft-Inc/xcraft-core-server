@@ -23,7 +23,7 @@
   "dependencies": {
     "xcraft-core-platform": "^1.0.0",
     "xcraft-core-daemon": "^1.0.0",
-    "xcraft-core-env": "^1.0.0",
+    "xcraft-core-env": "^2.0.0",
     "xcraft-core-etc": "^1.0.0",
     "xcraft-core-log": "^1.0.0",
     "xcraft-core-fs": "^1.0.0",

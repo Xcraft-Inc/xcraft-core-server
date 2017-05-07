@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 'use strict';
 
-require ('../lib/server.js') ();
+require ('../lib/server.js') (console.error);

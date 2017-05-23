@@ -16,4 +16,10 @@ module.exports = [
     message: 'user modules path filter',
     default: '',
   },
+  {
+    type: 'confirm',
+    name: 'useDevroot',
+    message: 'enable devroot (toolchain) environment support',
+    default: true,
+  },
 ];

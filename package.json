@@ -21,17 +21,17 @@
     "url": "git+https://github.com/Xcraft-Inc/xcraft-core-server.git"
   },
   "dependencies": {
-    "xcraft-core-bus": "^2.0.0",
+    "xcraft-core-bus": "^2.0.1",
     "xcraft-core-busclient": "^2.0.0",
     "xcraft-core-daemon": "^1.0.0",
     "xcraft-core-env": "^2.0.0",
     "xcraft-core-etc": "^1.2.0",
     "xcraft-core-eventstore": "^1.0.0",
-    "xcraft-core-fs": "^1.0.0",
+    "xcraft-core-fs": "^1.0.1",
     "xcraft-core-log": "^1.0.0",
     "xcraft-core-platform": "^1.0.0",
-    "xcraft-core-process": "^1.0.0",
-    "xcraft-core-utils": "^1.0.2"
+    "xcraft-core-process": "^1.0.3",
+    "xcraft-core-utils": "^1.1.0"
   },
   "author": "Samuel Loup & Mathieu Schroeter",
   "license": "MIT",

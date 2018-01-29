@@ -22,4 +22,10 @@ module.exports = [
     message: 'enable devroot (toolchain) environment support',
     default: true,
   },
+  {
+    type: 'checkbox',
+    name: 'modules',
+    message: 'restricted list of modules to load (empty for all)',
+    default: [],
+  },
 ];

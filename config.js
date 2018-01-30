@@ -26,6 +26,7 @@ module.exports = [
     type: 'checkbox',
     name: 'modules',
     message: 'restricted list of modules to load (empty for all)',
+    choices: [],
     default: [],
   },
 ];

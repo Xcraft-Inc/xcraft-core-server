@@ -17,6 +17,12 @@ module.exports = [
     default: '',
   },
   {
+    type: 'input',
+    name: 'userModulesBlacklist',
+    message: 'user modules path blacklist',
+    default: '',
+  },
+  {
     type: 'confirm',
     name: 'useDevroot',
     message: 'enable devroot (toolchain) environment support',

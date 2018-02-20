@@ -3,12 +3,12 @@
 const moduleName = 'server';
 
 exports.runAsDaemon = options => {
-  const path = require ('path');
-  const daemon = require ('xcraft-core-daemon');
+  const path = require('path');
+  const daemon = require('xcraft-core-daemon');
 
-  return daemon (
+  return daemon(
     moduleName,
-    path.join (__dirname, 'bin/server'),
+    path.join(__dirname, 'bin/server'),
     options.detached,
     options.logs,
     options.response
@@ -17,6 +17,6 @@ exports.runAsDaemon = options => {
 
 exports.runAsLib = () => {
   return {
-    start: require ('./lib/server.js'),
+    start: require('./lib/server.js'),
   };
 };

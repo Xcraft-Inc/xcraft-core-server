@@ -4,9 +4,9 @@ const moduleName = 'server';
 
 exports.runAsDaemon = options => {
   const path = require('path');
-  const daemon = require('xcraft-core-daemon');
+  const Daemon = require('xcraft-core-daemon');
 
-  return daemon(
+  return new Daemon(
     moduleName,
     path.join(__dirname, 'bin/server'),
     options.detached,

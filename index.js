@@ -9,7 +9,7 @@ exports.runAsDaemon = options => {
   return new Daemon(
     moduleName,
     path.join(__dirname, 'bin/server'),
-    options.detached,
+    options,
     options.logs,
     options.response
   );

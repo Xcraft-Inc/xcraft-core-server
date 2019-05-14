@@ -26,7 +26,7 @@ module.exports = [
     type: 'confirm',
     name: 'useDevroot',
     message: 'enable devroot (toolchain) environment support',
-    default: true,
+    default: false,
   },
   {
     type: 'checkbox',

@@ -27,7 +27,7 @@
     "xcraft-core-env": "^2.0.0",
     "xcraft-core-etc": "^2.0.0",
     "xcraft-core-eventstore": "^1.0.0",
-    "xcraft-core-fs": "^1.0.1",
+    "xcraft-core-fs": "^2.0.0",
     "xcraft-core-log": "^1.0.0",
     "xcraft-core-platform": "^1.0.0",
     "xcraft-core-process": "^1.0.3",
@@ -40,7 +40,9 @@
   },
   "homepage": "https://github.com/Xcraft-Inc/xcraft-core-server#readme",
   "devDependencies": {
-    "xcraft-dev-rules": "^0.4.0",
-    "prettier": "1.16.4"
-  }
+    "prettier": "1.18.2",
+    "xcraft-dev-prettier": "^1.0.0",
+    "xcraft-dev-rules": "^1.0.2"
+  },
+  "prettier": "xcraft-dev-prettier"
 }

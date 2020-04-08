@@ -2,7 +2,7 @@
 
 const moduleName = 'server';
 
-exports.runAsDaemon = options => {
+exports.runAsDaemon = (options) => {
   const path = require('path');
   const Daemon = require('xcraft-core-daemon');
 

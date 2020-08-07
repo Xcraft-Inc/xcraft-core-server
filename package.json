@@ -1,6 +1,6 @@
 {
   "name": "xcraft-core-server",
-  "version": "4.0.3",
+  "version": "5.0.0",
   "description": "Xcraft Server",
   "bin": {
     "xcraft-core-server": "./bin/server"

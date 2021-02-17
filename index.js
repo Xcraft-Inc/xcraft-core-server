@@ -17,6 +17,6 @@ exports.runAsDaemon = (options) => {
 
 exports.runAsLib = () => {
   return {
-    start: require('./lib/server.js'),
+    start: require('./lib/server.js')(false),
   };
 };

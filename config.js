@@ -29,6 +29,12 @@ module.exports = [
     default: false,
   },
   {
+    type: 'confirm',
+    name: 'enableWorkers',
+    message: 'enable experimental workers',
+    default: false,
+  },
+  {
     type: 'checkbox',
     name: 'modules',
     message: 'restricted list of modules to load (empty for all)',

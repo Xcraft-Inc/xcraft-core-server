@@ -3,7 +3,7 @@
   "version": "5.0.1",
   "description": "Xcraft Server",
   "bin": {
-    "xcraft-core-server": "./bin/server"
+    "xcraft-core-server": "bin/server"
   },
   "main": "index.js",
   "engines": {

@@ -26,7 +26,6 @@
     "xcraft-core-daemon": "^2.1.2",
     "xcraft-core-env": "^2.1.2",
     "xcraft-core-etc": "^2.0.4",
-    "xcraft-core-eventstore": "^1.1.1",
     "xcraft-core-fs": "^2.1.0",
     "xcraft-core-log": "^1.3.0",
     "xcraft-core-platform": "^1.0.1",

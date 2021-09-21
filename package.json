@@ -28,8 +28,6 @@
     "xcraft-core-etc": "^3.0.0",
     "xcraft-core-fs": "^2.1.0",
     "xcraft-core-log": "^2.0.0",
-    "xcraft-core-platform": "^1.0.1",
-    "xcraft-core-process": "^1.1.1",
     "xcraft-core-transport": "^4.0.0",
     "xcraft-core-utils": "^4.0.0"
   },

@@ -1,0 +1,9 @@
+[
+  {
+    "Module": "xcraft-core-server",
+    "Version": "v6.1.3",
+    "Hash": "3c12300",
+    "Dev": "master",
+    "Prod": "6.1"
+  }
+]

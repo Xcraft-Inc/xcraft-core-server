@@ -14,7 +14,7 @@ module.exports = [
     type: 'input',
     name: 'userModulesFilter',
     message: 'user modules path filter',
-    default: '^goblin-',
+    default: '',
   },
   {
     type: 'input',

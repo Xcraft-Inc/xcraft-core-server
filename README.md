@@ -1,4 +1,4 @@
-# 📘 Documentation du module xcraft-core-server
+# 📘 xcraft-core-server
 
 ## Aperçu
 

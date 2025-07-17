@@ -21,6 +21,7 @@
     "url": "git+https://github.com/Xcraft-Inc/xcraft-core-server.git"
   },
   "dependencies": {
+    "fs-extra": "^11.3.0",
     "xcraft-core-bus": "^5.0.0",
     "xcraft-core-busclient": "^5.0.0",
     "xcraft-core-daemon": "^3.0.0",

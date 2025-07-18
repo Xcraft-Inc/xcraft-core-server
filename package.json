@@ -32,7 +32,12 @@
     "xcraft-core-transport": "^4.0.0",
     "xcraft-core-utils": "^4.0.0"
   },
-  "author": "Samuel Loup & Mathieu Schroeter",
+  "author": "Epsitec SA",
+  "contributors": [
+    "Mathieu Schroeter <schroeter@epsitec.ch>",
+    "Samuel Loup <loup@epsitec.ch>",
+    "Gillian Fries <fries@epsitec.ch>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Xcraft-Inc/xcraft-core-server/issues"

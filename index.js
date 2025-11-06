@@ -1,5 +1,7 @@
 'use strict';
 
+const {syncPackagesSymlinks} = require('./lib/utils.js');
+
 const moduleName = 'server';
 
 exports.runAsDaemon = (options) => {
@@ -20,3 +22,5 @@ exports.runAsLib = () => {
     start: require('./lib/server.js')(false),
   };
 };
+
+exports.syncPackagesSymlinks = syncPackagesSymlinks;
